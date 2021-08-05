@@ -1,6 +1,6 @@
 //calculating the sum of the numbers
-const Sum = (nos) => nos.reduce((a, b) => a + b, 0);
-console.log(Sum([8, 34, 6, 29, 2, 1]));
+const sum = (nos) => nos.reduce((a, b) => a + b, 0);
+console.log(sum([8, 34, 6, 29, 2, 1]));
 
 //calculate average
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
@@ -8,16 +8,16 @@ const avg = (array) => array.reduce((a, b) => a + b) / array.length;
 console.log(avg(arr));
 
 //max number
-const maxnum = (nos) => Math.max(...nos);
-console.log(maxnum([5, 10, 15, 20, 25, 30, 35]));
+const maxNum = (nos) => Math.max(...nos);
+console.log(maxNum([5, 10, 15, 20, 25, 30, 35]));
 
 //min number
-const minnum = (nos) => Math.min(...nos);
-console.log(minnum([5, 10, 15, 20, 25, 30, 35]));
+const minNum = (nos) => Math.min(...nos);
+console.log(minNum([5, 10, 15, 20, 25, 30, 35]));
 
 //reversing a string
-const strreverse = (str) => str.split("").reverse().join("");
-console.log(strreverse("This is a reversed string"));
+const strReverse = (str) => str.split("").reverse().join("");
+console.log(strReverse("This is a reversed string"));
 
 //calculating a random number from a range of numbers
 const a = Math.floor(Math.random() * (45 - 35 + 1)) + 35;
@@ -34,12 +34,12 @@ letters.forEach((e) => {
 });
 
 //multiple re-assignment
-const [w, x, y, z] = [30, 84, 28, "BABY"];
+const [w, x, y, z] = [30, 84, 28, "Axel"];
 console.log(w, x, y, z);
 
 //sort words from shortest to longest
 const sortByLength = (arr) => arr.sort((a, b) => a.length - b.length);
-console.log(sortByLength(["Attempt", "Life", "Not", "Me", "Again"]));
+console.log(sortByLength(["Epic", "1337", "Winning", "Almonds", "Raspberry"]));
 
 //program to check for a if a number is even or odd
 const isEvenOdd = (num) => num % 2 === 0;
@@ -148,19 +148,16 @@ const devs = [
     name: "A",
     age: 26,
     tech: ["JavaScript", "React"],
-    addr: { country: "India", city: "Pune" },
   },
   {
     name: "B",
     age: 25,
     tech: ["Node", "AngularJs"],
-    addr: { country: "USA", city: "NY" },
   },
   {
     name: "C",
     age: 27,
     tech: ["Java", "AWS"],
-    addr: { country: "UK", city: "London" },
   },
 ];
 
@@ -180,10 +177,10 @@ if (marks.includes(50)) {
 
 // .some() example
 const operatives = [
-  { id: 12, name: "Baze Malbus", pilot: false },
-  { id: 44, name: "Bodhi Rook", pilot: true },
-  { id: 59, name: "Chirrut Îmwe", pilot: false },
-  { id: 122, name: "Jyn Erso", pilot: false },
+  { id: 12, name: "King Arthur", pilot: false },
+  { id: 44, name: "George Jetson", pilot: true },
+  { id: 59, name: "Bill Gates", pilot: false },
+  { id: 122, name: "Kevin Micknik", pilot: true },
 ];
 
 //   if some of your array values correspond to what you’re looking for, .some() will return true. If not, it’ll return false.
