@@ -229,3 +229,10 @@ const sum = (sum, animal) => {
 
 const ages = data.filter(isDog).map(dogYears).reduce(sum);
 // ages = 84
+
+// filter out even numbers in array, return odd numbers
+const arr = [1,2,3,4,5,6,7,8,9,10,11,12]
+
+const odds = arr.filter(n => n%2)
+
+console.log(odds)
