@@ -239,3 +239,11 @@ console.log(odds)
 
 // filter an array based on values in another array
 arr1.filter(e => arr2.includes(e))
+
+// sum similar keys in an array of objects
+const arr = [ { 'name': 'P1', 'value': 150 }, { 'name': 'P1', 'value': 150 }, { 'name': 'P2', 'value': 200 }, { 'name': 'P3', 'value': 450 } ];
+
+const res = Array.from(arr.reduce(
+  (m, {name, value}) => m.set(name, (m.get(name) || 0) + value), new Map
+), ([name, value]) => ({name, value}));
+console.log(res);
